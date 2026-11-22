@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.gettradeping/mcp-server",
+  "description": "Tradeping MCP: signal-based leads for the trades with verified emails and drafted messages.",
+  "repository": {
+    "url": "https://github.com/gettradeping/mcp-server",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "tradeping-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gettradeping.com/mcp"
+    }
+  ]
+}

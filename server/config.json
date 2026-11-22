@@ -1,0 +1,6 @@
+{
+  "brand": "Tradeping",
+  "endpoint": "https://gettradeping.com/mcp",
+  "version": "1.0.0",
+  "scope": "tradeping"
+}

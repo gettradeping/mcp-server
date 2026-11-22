@@ -1,0 +1,42 @@
+{
+  "name": "tradeping-mcp",
+  "version": "1.0.0",
+  "description": "MCP connector for Tradeping: signal-based leads for roofing, HVAC, real estate and mortgage with verified emails and drafted first messages.",
+  "type": "module",
+  "bin": {
+    "tradeping-mcp": "server/index.js"
+  },
+  "files": ["server", "icon.png", "manifest.json", "server.json", "README.md", "LICENSE"],
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test test/*.test.mjs",
+    "bundle": "mcpb pack . tradeping.mcpb"
+  },
+  "dependencies": {
+    "mcp-remote": "0.14.2"
+  },
+  "devDependencies": {
+    "@anthropic-ai/mcpb": "2.1.2"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "author": "Tradeping",
+  "license": "MIT",
+  "homepage": "https://gettradeping.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gettradeping/mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gettradeping/mcp-server/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": ["mcp", "model-context-protocol", "claude", "tradeping", "lead-generation", "outbound", "roofing", "hvac", "real-estate", "mortgage"],
+  "mcpName": "io.github.gettradeping/mcp-server",
+  "overrides": {
+    "tmp": "^0.2.6"
+  }
+}
