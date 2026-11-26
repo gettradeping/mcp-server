@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.gettradeping/mcp-server",
+  "title": "Lead generation by Tradeping",
+  "description": "Lead generation for roofing, HVAC, real estate and mortgage: B2B leads with a verified email.",
+  "repository": {
+    "url": "https://github.com/gettradeping/mcp-server",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "tradeping-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gettradeping.com/mcp"
+    }
+  ]
+}

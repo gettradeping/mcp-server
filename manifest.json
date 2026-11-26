@@ -1,0 +1,33 @@
+{
+  "manifest_version": "0.3",
+  "name": "tradeping",
+  "display_name": "Lead generation by Tradeping",
+  "version": "1.0.0",
+  "description": "Lead generation MCP connector by Tradeping: B2B leads for roofing, HVAC, real estate and mortgage with a verified email and drafted cold email outreach.",
+  "long_description": "Lead generation for the local trades: Tradeping finds B2B leads in roofing, HVAC, real estate and mortgage from companies that are hiring right now, with the decision maker, a verified email and a drafted three-step cold email outreach sequence. get_account reads your plan and targeting. list_leads and get_lead read your feed. find_leads runs today's research within your plan. update_lead and rewrite_lead edit drafts; send_lead sends the next step from your own mailbox within your daily cap. list_suppressions and add_suppression manage your do-not-contact list.",
+  "author": {
+    "name": "Tradeping"
+  },
+  "homepage": "https://gettradeping.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gettradeping/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server/index.js"]
+    }
+  },
+  "compatibility": {
+    "platforms": ["darwin", "win32", "linux"],
+    "runtimes": {
+      "node": ">=22"
+    }
+  },
+  "license": "MIT",
+  "keywords": ["mcp", "claude", "lead-generation", "b2b-leads", "contractor-leads", "roofing-leads", "hvac-leads", "real-estate-leads", "mortgage-leads", "cold-email"]
+}
